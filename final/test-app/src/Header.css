@@ -1,0 +1,61 @@
+header{
+    background-color: rgb(40, 54, 24);
+    color: white;
+    font-size: 4rem;
+    font-weight:bolder;
+    text-align: center;
+}
+.ham-icon{
+    display: none;
+}
+.active{
+    color: rgb(254, 250, 224);
+    text-decoration: none;
+    font-weight:900;
+}
+.nav-content{
+    background-color: rgb(221, 161, 94);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 1.2rem;
+  }
+  
+.nav-content  a{
+    text-decoration: none;
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    
+    .ham-icon{
+        color:rgb(254, 250, 224);
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1.5rem;
+        display:inline-block;
+        background-color: rgb(40, 54, 24);
+    }
+    .ham-icon:hover{
+        cursor: pointer;
+    }
+    .nav-header{
+        display: grid;
+        grid-template-columns: auto 100px;
+        position: relative;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(254, 250, 224);
+        z-index: 1;
+        margin-top: 4rem;
+        margin-left: 90%;
+    }
+    .nav-content{
+        display: none;
+    }
+    .dropdown-item:hover{
+        background-color: rgb(40, 54, 24);
+        color: rgb(254, 250, 224);
+    }
+  } 

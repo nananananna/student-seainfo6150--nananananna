@@ -1,0 +1,5 @@
+cat1.jpeg
+cat2.jpeg
+cat3.jpeg
+dog1.jpeg
+black-cat.png

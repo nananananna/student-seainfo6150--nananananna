@@ -1,0 +1,12 @@
+.filter-img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+
+}
+.details{
+    margin: 1rem;
+    border: 3px solid rgb(96, 108, 56);
+    border-radius: 1rem;
+    padding: 1rem;
+}

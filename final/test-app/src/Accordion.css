@@ -1,0 +1,16 @@
+*{
+    color: black;
+}
+.accordion{
+    margin: 1rem;
+    background-color: rgb(254, 250, 224);
+    padding: 1rem;
+}
+.accordion-header{
+    color: rgb(96, 108, 56);
+    font-size: 1.6rem;
+}
+.accordion-content{
+    font-size: 1.2rem;
+    font-weight: normal;
+}

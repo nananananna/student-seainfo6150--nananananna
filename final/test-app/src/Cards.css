@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    border: 2px solid rgb(221, 161, 94,50%);
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+h2{
+    background-color: rgb(221, 161, 94);
+    color: white;
+}
+@media (max-width: 767px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}

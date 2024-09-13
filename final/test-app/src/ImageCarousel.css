@@ -1,0 +1,31 @@
+.image-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* 可根据需要调整轮播器的最大宽度 */
+    margin: auto;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .carousel-button:hover {
+    background-color: #555;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
