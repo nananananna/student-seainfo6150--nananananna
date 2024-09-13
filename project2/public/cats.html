@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Cats</title>
+    <link rel="stylesheet" href="cats.css">
+    <script defer src="cats.js"></script>
+</head>
+
+<body>
+    <a href="#content" class="skip">Skip to content</a>
+    <header>
+        <a href="index.html" class="logo_a"><img src="black-cat.png" alt="logo" class="logo"></a>
+        <h1>Famous Cats</h1>
+        <nav>
+            <img src="menu.png" alt="menu" class="hamburger" tabindex="0">
+            <div class="dropdown-content">
+                <ul><a href="index.html" class="dropdown-item">Home</a></ul>
+                <ul><a href="cats.html" class="dropdown-item">FamousCats</a></ul>
+                <ul><a href="events.html" class="dropdown-item">CatsEvents</a></ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <a name="content"></a>
+        <div class="cards">
+            <div class="card1 card">
+                <h2>Ted Nude-Gent</h2>
+                <img src="http://placekitten.com/200/200" alt="cat1" class="images">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere rem officia eaque omnis,
+                    blanditiis, error quibusdam, ut modi tenetur ipsam? Vel quia consequuntur, fuga aut enim quibusdam
+                    quas laboriosam?<a href="#" class="openForm">Subscribe</a></p>
+            </div>
+            <div class="card2 card">
+                <h2>Tardar Sauce</h2>
+                <img src="http://placekitten.com/200/200" alt="cat2" class="images">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit nam tenetur nulla voluptatum
+                    in, qui officia libero esse reprehenderit consectetur doloribus ipsum et suscipit maiores, mollitia
+                    harum consequuntur recusandae!<a href="##" class="openForm">Subscribe</a></p>
+            </div>
+            <div class="card3 card">
+                <h2>Marmalade</h2>
+                <img src="http://placekitten.com/200/200" alt="cat3" class="images">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor at eaque quia nostrum dolorum
+                    corrupti consectetur pariatur reiciendis veniam deserunt ab velit, blanditiis assumenda doloribus
+                    libero. Sapiente dolorum voluptate mollitia.<a href="###" class="openForm">Subscribe</a></p>
+            </div>
+            <div class="card4 card">
+                <h2>Lil Bub</h2>
+                <img src="http://placekitten.com/200/200" alt="cat4" class="images">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere nesciunt incidunt. Eum esse
+                    praesentium quas non! Recusandae, voluptatem quia dolores qui magni maiores natus, aliquam
+                    repellendus unde corporis deserunt.<a href="####" class="openForm">Subscribe</a></p>
+            </div>
+            <div class="card5 card">
+                <h2>Orangey</h2>
+                <img src="http://placekitten.com/200/200" alt="cat5" class="images">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vero voluptatibus, fuga quisquam
+                    veritatis perspiciatis quasi itaque magnam cumque iste inventore necessitatibus blanditiis, delectus
+                    enim perferendis! Repudiandae vero voluptatum ipsa.<a href="#####" class="openForm">Subscribe</a>
+                </p>
+            </div>
+            <div class="card6 card">
+                <h2>Bob</h2>
+                <img src="http://placekitten.com/200/200" alt="cat6" class="images">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe inventore impedit voluptas
+                    necessitatibus ea, voluptatibus aperiam modi atque veniam incidunt. Nisi optio amet debitis, nobis
+                    itaque aperiam harum deleniti beatae!<a href="######" class="openForm">Subscribe</a></p>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h3>Subscribe to the Latest News!</h3>
+                <form action="/subscribe" method="post" class="subscribe">
+                    <div class="name">
+                        <label for="name">Username:</label><span>*required</span>
+                        <input type="text" id="name" name="name" class="input-name">
+                        <div class="err-name error">Username is required</div>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email: </label><span>*required</span>
+                        <input type="text" id="email" name="email" class="input-email">
+                        <div class="err-email error"></div>
+                    </div>
+                    <div class="con-email">
+                        <label for="con-email">Confirm Email: </label><span>*required</span>
+                        <input type="text" id="con-email" name="con-email" class="input-con-email">
+                        <div class="err-con-email error"></div>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" class="sub-button">Subscribe</button>
+                        <button type="button" class="cancel">Cancel</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul><a href="privacy.html" class="privacy">Privacy Policy</a></ul>
+        <ul><a href="work.html" class="baidu">Work for Us</a></ul>
+        <ul><a href="contact.html" class="ins">Contact Us</a></ul>
+    </footer>
+</body>
+
+</html>
