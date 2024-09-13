@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to register!</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Welcome to register!</h1>
+        </div>
+    </header>
+    <main>
+        <form class="register-form" action="/register" method="post">
+
+            <div class="name box">
+                <label for="input-name">Name<span>*</span></label>
+                <input type="text" name="name" id="input-name" class="input-name">
+                <div class="err-name error"></div>
+            </div>
+
+            <div class="email box">
+                <label for="input-email">Email<span>*</span></label>
+                <input type="text" name="email" id="input-email" class="input-email">
+                <div class="err-email error"></div>
+            </div>
+
+            <div class="con-email box">
+                <label for="input-con-email">Confirm Email<span>*</span></label>
+                <input type="text" name="con-email" id="input-con-email" class="input-con-email">
+                <div class="err-con-email error"></div>
+            </div>
+
+            <div class="spam box">
+                <div>Do you want receive spam?</div>
+                <label for="spam">I want</label>
+                <input type="checkbox" name="wants-spam" id="spam" value="wants">
+                <label for="no-spam">Probably no</label>
+                <input type="checkbox" name="no-spam" id="no-spam" value="no">
+            </div>
+
+            <div class="tier box">
+                <label for="tier">Your Tier</label>
+                <select name="tier" id="tier">
+                    <option value="" selected>Please select </option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                    <option value=""> </option>
+                </select>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="privacy.html" class="privacy">PrivacyPolicy</a>
+        <a href="baidu.html" class="baidu">Baidu</a>
+        <a href="ins.html" class="ins">Instagram</a>
+    </footer>
+</body>
+
+</html>

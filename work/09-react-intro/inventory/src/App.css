@@ -1,0 +1,24 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.count-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 0 1rem;
+}
+
+p{
+  margin-right: 1rem;
+}
+
+.reorder-button {
+  margin-left: 1rem;
+}

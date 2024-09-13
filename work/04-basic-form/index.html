@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" alt="logo">
+        <h1>basic-form</h1>
+    </div>
+    <main>
+        <form action="/submit" target="_blank" method="post">
+            <div class="column">
+                <label for="name">Username</label>
+                <input type="text" id="name" required autofocus>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required autofocus>
+                <label for="annoy_me">Do you want us to send you annoying emails?</label>
+                <input type="checkbox" name="annoy_me" id="annoy_me" checked >Yes
+                <input type="checkbox" name="annoy_me">No
+            </div>
+            <div class="column">
+                <label for="tier">Your Tier</label>
+                <select name="tier" id="tier" required>
+                    <option value="none" selected>Please select </option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                    <option value="none">  </option>
+                </select><br>
+            <button type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="#" class="privacy">PrivacyPolicy</a>
+        <a href="#" class="f1">Baidu</a>
+        <a href="#" class="f2">Instagram</a>
+    </footer>
+</body>
+</html>

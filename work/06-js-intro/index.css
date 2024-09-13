@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+header{
+    display: grid;
+    grid-template-columns: 6rem auto 6rem;
+    grid-gap: 10px;
+    background-color: orange;
+    height: 100px;
+}
+h1{
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    font-weight: bolder;
+    font-style: italic;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top: 10px;
+}
+.card1,.card2,.card3{
+    grid-column: span 4;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}  
+.readmore{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    margin-top: 20px;
+} 
+a:hover{
+    background-color: white;
+    color: orange;
+}
+footer{
+    margin-top: 50px;
+    width:100vw;
+    height: 50px;
+    background-color:orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    line-height: 50px;
+}
+
+.privacy,.baidu,.ins{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+nav{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    height: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.dropdown-content.active{
+    height: 30px;
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-item {
+    font-size: 18px;
+    color: orange;
+    text-decoration: none;
+}
+.dropdown-item.active {
+    display: block;
+}
+.dropdown-item:hover{
+    background-color: #ddd;
+}
+
+nav button{
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: bolder;
+    text-decoration: dashed;
+}
+
+@media screen and (max-width: 50rem){
+    header{
+        height: 50px;
+        display: grid;
+        grid-template-columns: 50px auto 70px;
+    }
+    a img{
+        height: 50px;
+        width: 50px;
+    }
+    h1{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin: 0;
+        font-size:  30px;
+        white-space: pre-wrap;
+    }
+    nav button{
+        margin-top:15px;
+        font-size: 15px;
+        height: 25px;   
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .dropdown-item.active,.dropdown-item {
+        font-size: 15px;
+    }
+
+    footer{
+        width:auto;
+    }
+}

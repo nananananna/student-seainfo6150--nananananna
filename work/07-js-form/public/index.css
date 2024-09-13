@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+form {
+    margin-top: 2rem;
+    grid-column: 3/11;
+    background-color: cornsilk;
+}
+
+.box {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+span {
+    color: red;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    height: 2rem;
+    margin: 1.2rem;
+
+}
+
+button:hover {
+    background-color: chocolate;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    margin-top: 2rem;
+    height: 2rem;
+}
+
+.privacy,
+.baidu,
+.ins {
+    text-decoration: none;
+    color: white;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+a:hover {
+    background-color: chocolate;
+}
+
+.error {
+    color: red;
+}
+
+@media screen and (max-width:40rem) {
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 1rem;
+    }
+
+}

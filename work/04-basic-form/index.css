@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.header{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 100vw;
+    line-height: 100px;
+}
+img{
+    width:100px;
+    height: 100px;
+    vertical-align: top;
+}
+h1{
+    display: inline-block;
+    text-align: center;
+}
+main{
+    margin: 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cccccc69;
+}
+.column{
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+footer{
+    width:100vw;
+    height: 50px;
+    background-color:orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    line-height: 50px;
+}
+.privacy,.f1,.f2{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+label{
+    display: block;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    width:50%;
+    height: 30%;
+    margin-top: 50px;
+    background-color: orange;
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: self-end;
+    font-size: 15px;
+    font-weight: bolder;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+@media screen and (max-width:50rem) {
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.column{
+    justify-content: center;
+    align-self:center;
+}
+button{
+    height: 30px;
+}
+}
