@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to register!</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="black-cat.png" alt="logo"></a>
+        <h1>Welcome to register!</h1>
+        <nav>
+            <button>Navigation</button>
+            <div class="dropdown-content">
+                <a href="index.html" class="dropdown-item">Home</a>
+                <a href="about.html" class="dropdown-item">About cats</a>
+                <a href="register.html" class="dropdown-item">Register</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="/register" method="post">
+            <div class="column">
+                <div class="name">
+                    <label for="name">Username<span>*</span></label>
+                    <input type="text" name="name"id="name" placeholder="Username is required"  required autofocus>
+                </div>
+                
+                <div class="email">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Email is required" required>
+                </div>
+                
+                <div class="hobby">What's your hobby?
+                    <label for="music">music</label>
+                    <input type="checkbox" name="hobby1" id="music" value="music" checked>
+                    <label for="dance">dance</label>
+                    <input type="checkbox" name="hobby2" id="dance" value="dance">
+                </div>
+                <div class="tier">
+                    <label for="tier">Your Tier</label>
+                    <select name="tier" id="tier" required>
+                        <option value="" selected>Please select </option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                        <option value="">  </option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="privacy.html" class="privacy">PrivacyPolicy</a>
+        <a href="baidu.html" class="baidu">Baidu</a>
+        <a href="ins.html" class="ins">Instagram</a>
+    </footer>
+</body>
+</html>
